@@ -16,6 +16,16 @@ const HomeInterface = () => {
       once: true,
     }); // Initialize AOS with animation duration
   }, []);
+  if(window.innerHeight<=320)
+  {
+    useEffect(() => {
+      AOS.init({
+        duration: 2000,
+        offset: window.innerHeight * 0.3, //  (30% of the screen height)
+        once: true,
+      }); // Initialize AOS with animation duration
+    }, []);
+  }
 
   return (
     <div className="Hero-container bg-black" >
