@@ -12,25 +12,26 @@ const HomeInterface = () => {
   useEffect(() => {
     AOS.init({
       duration: 2000,
-      offset: window.innerHeight * 0.6, //  (30% of the screen height)
+      offset: window.innerHeight * 0.4, //  (30% of the screen height)
       once: true,
     }); // Initialize AOS with animation duration
   }, []);
 
   return (
-    <div className="Hero-container bg-black">
+    <div className="Hero-container bg-black" >
       <style>
         @import
         url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Onest:wght@100..900&family=Roboto&display=swap');
       </style>
       <div className="section-header">
-        <div className="padding-global">
+        <div className="padding-global text-center">
           <div className="container-large">
             <div className="header-component">
-              <div className="header-content text-center">
-                <h1 className="text-quote">
-                  Turning the invisible into the intuitive
-                </h1>
+              <h1 className="text-quote text-center">
+                Turning the invisible into the intutive
+              </h1>
+              <div className="header-content">
+             
               </div>
               <div className="card-collection">
                 <div className="item-card">
@@ -102,7 +103,7 @@ const HomeInterface = () => {
                     </h5>
                   </div>
                 </div>
-              </div>
+              </div>//
             </div>
           </div>
           <div className="container-large" data-aos="fade-up">
@@ -152,8 +153,7 @@ const HomeInterface = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="container-large-cta" data-aos="fade-up">
+            <div className="container-large-cta" data-aos="fade-up">
             <div className="padding-section">
               <div className="cta-component">
                 <div className="cta-content">
@@ -178,12 +178,15 @@ const HomeInterface = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div>
+            <div>
             <h1 className="text text-center pb-20 pt-10" data-aos="fade-in">
               Mission : Algorithm Possible
             </h1>
           </div>
+          </div>
+          </div>
+         
+          
           <div className="timeline" data-aos="fade-in" data-aos-delay="100">
             <div className="container left" data-aos="fade-in">
               <div className="content" data-aos="fade-right">
