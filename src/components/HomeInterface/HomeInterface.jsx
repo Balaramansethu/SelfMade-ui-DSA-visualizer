@@ -11,8 +11,8 @@ import "aos/dist/aos.css";
 const HomeInterface = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1300,
-      offset: window.innerHeight * 0.4, // Offset to trigger animation (30% of the screen height)
+      duration: 2000,
+      offset: window.innerHeight * 0.6, //  (30% of the screen height)
       once: true,
     }); // Initialize AOS with animation duration
   }, []);
