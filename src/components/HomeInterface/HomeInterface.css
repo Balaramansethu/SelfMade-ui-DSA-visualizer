@@ -218,6 +218,7 @@
     .benifit-grid {
         grid-column-gap:0;
         grid-row-gap: 0;
+        grid-template-columns: 1fr ;
     }
 }
 
